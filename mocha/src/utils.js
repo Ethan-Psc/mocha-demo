@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 function findCaseFile (filePath) {
     const fileList = [];
-    const fullPath = path.join(__dirname, filePath);
+    const fullPath = path.join('/Users/tanyongjia/my-vue/mocha-demo/', filePath);
     const stat = fs.statSync(fullPath);
     if (stat.isFile()) {
         fileList.push(fullPath);
